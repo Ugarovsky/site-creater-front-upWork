@@ -98,6 +98,17 @@ ul li {
     padding: 0;
 }
 
+#add-template{ 
+  margin: 20px 0;
+}
+
+#add-template form{ 
+  padding: 10px;
+  border: 1px solid rgb(187, 187, 187);
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
 main {
     padding-top: 50px;
     min-height: 80vh;
@@ -273,6 +284,10 @@ margin: 20px 0;
 .check-domain { 
 margin: 20px 0;
 }
+
+label { 
+  font-weight: 600;
+}
   .site-footer
   {
     padding-bottom:0
@@ -358,6 +373,15 @@ margin: 20px 0;
 }
 
 
+.form-group .exp-label  span {
+  float: right;
+ }
+
+ #add-template form { 
+   max-width: 700px;
+ }
+
+
 
 @media (max-width:767px)
 {
@@ -391,12 +415,23 @@ margin: 20px 0;
       position: fixed;
       bottom: 0;
    }
+
+   .exp-label { 
+     width: 100%;
+     padding: 0 20px;
+   }
+
    
    #header { 
     width: 100vw;
     position: fixed;
     top: 0;
        min-height: 10vh;
+       z-index: 10000000;
+   }
+
+   #exampleModalLong { 
+      z-index: 10000001;
    }
    #com-img { 
        width: 80%;

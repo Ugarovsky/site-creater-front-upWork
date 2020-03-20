@@ -12,7 +12,7 @@
     <script src="script/script.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
         <div class="container">
        <div class="navbar-logo">
         <a class="navbar-brand" href="./index.html">YOURLOGO</a>
@@ -37,50 +37,55 @@
       </main>
      
 </body>
+<div style="position: relative;">
 <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id odit asperiores excepturi neque in harum, animi voluptas nemo error dolorem accusantium accusamus officia deserunt, sed tempora! Sint, quia saepe?</p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Plicy</h6>
-          <ul class="footer-links">
-            <li><a href="#">Private Policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Terms</h6>
-          <ul class="footer-links">
-            <li><a href="#">Term of the service</a></li>
-          </ul>
-        </div>
+  <div class="container">
+    <div class="row no-mobile">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id odit asperiores excepturi neque in harum, animi voluptas nemo error dolorem accusantium accusamus officia deserunt, sed tempora! Sint, quia saepe?</p>
       </div>
-      <hr>
+
+      <div class="col-xs-6 col-md-3">
+      <h6>Plicy and Terms</h6>
+        <ul class="footer-links">
+          <li><a href="#">Private Policy</a></li>
+          <li><a href="#">Term of the service</a></li>
+        </ul>
+      </div>
     </div>
-    </div>
+
+   <div class="mobile-footer">
+     <div class="footer-link">
+       <a href="">Private Policy</a>
+       <br>
+         <a href="">Terms and Condition</a>
+       </ul>
+     </div>
+   </div>
+  </div>
+  </div>
 </footer>
+</div>
 
 <!-- policy pop-up -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut perspiciatis corrupti id ab. Hic, eligendi. Eligendi, blanditiis. Non soluta exercitationem voluptatibus tenetur repudiandae assumenda dolores beatae, quod ipsa fugit. 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cookieAccepted()">Ok</button>
-        </div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut perspiciatis corrupti id ab. Hic, eligendi. Eligendi, blanditiis. Non soluta exercitationem voluptatibus tenetur repudiandae assumenda dolores beatae, quod ipsa fugit. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cookieAccepted()">Ok</button>
       </div>
     </div>
   </div>
+</div>
+
 </html>

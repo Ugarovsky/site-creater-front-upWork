@@ -2,10 +2,16 @@
     box-sizing: border-box;
 }
 
+
+
 #header { 
     padding: 5px 5vw;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     min-height: 70px;
+}
+
+#com-img { 
+    width: 40%;
 }
 
 h1 { 
@@ -15,16 +21,15 @@ h1 {
 
 .my-btn { 
     margin: 20px 0;
-    border-radius: 0;
+    border-radius: 5px;
     min-width: 30%;
     display: block;
-    background-color: #0073b1;
-    min-height: 40px;
+    min-height: 30px;
 }
 
 .google-text-input { 
     display: block;
-    margin: 5px 50px;
+    margin-top: 5px;
     min-width: 30%;
     padding: 0 10px;
     border-radius: 4px;
@@ -37,9 +42,6 @@ h1 {
 #footer{
     width: 100vw;
     min-height: 80px;
-    position: absolute;
-    bottom: 0;
-    display: flex;
     color:#e4e4e4;
     justify-content: space-around;
 }
@@ -51,14 +53,29 @@ h1 {
 }
 
 #footer-links { 
-    flex: 1;
+  justify-content: space-around;
     margin-top: 15px;
     text-align: left;
+}
+
+
+.site-footer a{ 
+  display: inline-block;
+  flex: 1;
 }
 
 #footer-links ul li{
     list-style-type: none;
     line-height: 30px;
+}
+
+ul { 
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+
+ul li { 
+  list-style-type: none;
 }
 
 #footer-label h5{ 
@@ -73,6 +90,7 @@ h1 {
 .navbar-links { 
     display: inline-block;
     width: 50%;
+    color:white;
     text-align: right;
 }
 
@@ -81,22 +99,34 @@ h1 {
 }
 
 main {
-    padding: 20px 5vw;
+    padding-top: 50px;
+    min-height: 80vh;
+}
+
+.domain-input { 
+  width: 65%;
+}
+
+.domain-check-button {
+  width: 25%;
 }
 
 @media screen and (min-width: 900px) {
     .google-text-input {
         margin: 5px 0;
     }
+
     main {
-        padding: 50px 5vw;
+        padding-top: 50px;
     }
   }
 
-  .site-footer
-{
+  .site-footer {
+  position: absolute;
+    width: 100%;
+  justify-content: space-around;
   background-color:#26272b;
-  padding:45px 0 20px;
+  padding: 20px;
   font-size:15px;
   line-height:24px;
   color:#737373;
@@ -167,6 +197,39 @@ main {
 {
   margin:0
 }
+
+
+.domain-example { 
+  margin:20px 50px;
+}
+
+.payment button { 
+  width: 200px;
+  margin: 0 16px;
+}
+
+.check-button { 
+  margin-left: 20px;
+}
+
+
+.form-row { 
+  margin-top: 10px;
+}
+.form-check-input { 
+  width: 36px;
+  height: 36px;
+  margin-top: -18px;
+}
+
+.col-auto input{ 
+   width: 400px;
+}
+
+.check-domain { 
+margin: 20px 0;
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -174,8 +237,42 @@ main {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
-{
+
+
+@media (max-width:767px) { 
+.check-button { 
+    margin-left: 10px;
+}
+
+.col-auto input{ 
+  width: auto;
+}
+
+.domain-example { 
+  margin:20px 0; 
+}
+
+.payment button { 
+  width: 100%;
+  margin: 0;
+}
+
+.payment { 
+  position: absolute; bottom: 10px; right: 10px; width: 100px;
+}
+
+.form-row { 
+  margin-top: 10px;
+}
+.form-check-input { 
+  width: 36px;
+  height: 36px;
+  margin-top: -18px;
+}
+
+.check-domain { 
+margin: 20px 0;
+}
   .site-footer
   {
     padding-bottom:0
@@ -256,6 +353,11 @@ main {
 }
 
 
+.mobile-footer{
+  display: none;
+}
+
+
 
 @media (max-width:767px)
 {
@@ -266,9 +368,73 @@ main {
     font-weight:600
   }
 
-  
+  .mobile-footer{ 
+    display: block;
+  }  
    .text-center button { 
     width: 80%;
-    margin-left: 10%;
+    margin: 20px 10%;
   }
+  h1 { 
+    font-size: 20px;
+    margin: 5px auto;
+}
+   main {
+        padding-top: 10px;
+        min-height: 80vh;
+        margin: 10vh 0;
+   }
+
+   footer { 
+     width: 100vw;
+      height: 10vh;
+      position: fixed;
+      bottom: 0;
+   }
+   
+   #header { 
+    width: 100vw;
+    position: fixed;
+    top: 0;
+       min-height: 10vh;
+   }
+   #com-img { 
+       width: 80%;
+       margin: 10px 0 0 0;
+   }
+
+   .sing-controls{
+     margin-top: 30px;
+   }
+
+   .no-mobile{
+     display: none;
+   }
+
+   .footer-label{
+     padding: 12px 0;
+     text-align: center;
+     flex:1;
+     color:white;
+   }
+
+   .footer-link { 
+    color:white;
+    padding: 2px 10px;
+    text-align: right;
+   }
+   .site-footer { 
+     padding: 0;
+   }
+
+   .footer-link div { 
+     text-align: center;
+     padding: 10px 0;
+     display: inline-block;
+     width: 45%;
+   }
+
+   .footer-link a { 
+     color:rgb(206, 206, 206);
+   }
 }

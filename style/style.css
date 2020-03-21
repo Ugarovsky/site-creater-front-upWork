@@ -18,13 +18,18 @@ h1 {
     font-size: 28px;
     margin: 10px auto;
 }
-
 .my-btn { 
     margin: 20px 0;
     border-radius: 5px;
     min-width: 30%;
     display: block;
+
     min-height: 30px;
+    background: #2977c9;
+}
+
+.btn-primary { 
+  background: #2977c9;
 }
 
 .google-text-input { 
@@ -211,7 +216,7 @@ main {
 
 
 .domain-example { 
-  margin:20px 50px;
+  margin: 20px 16px;
 }
 
 .payment button { 
@@ -249,8 +254,32 @@ margin: 20px 0;
   }
 }
 
+.asdd { 
+  width: 400px;
+}
+
+#inputPassword2 { 
+  width: 400px;
+}
+
+
 
 @media (max-width:767px) { 
+  .exp-cont { 
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-nav { 
+    margin-top: 25px;
+  }
+  .asdd { 
+    flex: 5;
+    width: 170px;
+   }
+   #inputPassword2 { 
+    width: 100%;
+  }
+
 .check-button { 
     margin-left: 10px;
 }
@@ -306,6 +335,7 @@ label {
 
 
 .text-center button { 
+    min-height: 50px;
     width: 30%;
     margin-left: 35%;
     border-radius: 2px;
@@ -323,6 +353,17 @@ label {
   font-weight:700;
   font-size:13px
 }
+
+
+.controlers button { 
+  border-radius: 5px !important;
+}
+
+button { 
+  border-radius: 28px !important;
+}
+
+
 .social-icons a{
   background-color:#eceeef;
   color:#818a91;
@@ -368,7 +409,7 @@ label {
 }
 
 
-.mobile-footer{
+.mo bile-footer{
   display: none;
 }
 
@@ -382,9 +423,51 @@ label {
  }
 
 
+ .scene {
+  position: relative;
+  width: 240px;
+  height: 60vh;
+  margin: 0 auto;
+  perspective: 1000px;
+}
 
+.carousel-options {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+
+.carousel-options p button { 
+  margin:10px;
+  min-width: 100px;
+}
 @media (max-width:767px)
 {
+
+
+  .domain-cont { 
+    margin-top: 30px;
+  }  
+
+
+.form-inline { 
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.form-inline button { 
+  border-radius: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+
+  .scene {
+    perspective: 320px;
+  }
+
+
   .social-icons li.title
   {
     display:block;
@@ -396,15 +479,18 @@ label {
     display: block;
   }  
    .text-center button { 
+     min-height: 30px;
     width: 80%;
-    margin: 20px 10%;
+    margin: 15px 10%;
+    font-weight: 600;
   }
   h1 { 
+    padding: 0 13px;
     font-size: 20px;
     margin: 5px auto;
 }
    main {
-        padding-top: 10px;
+ padding: 4px 28px 0px 28px;
         min-height: 80vh;
         margin: 10vh 0;
    }
@@ -443,7 +529,8 @@ label {
    }
 
    .no-mobile{
-     display: none;
+     
+   display: none;
    }
 
    .footer-label{
@@ -470,28 +557,16 @@ label {
    }
 
    .footer-link a { 
-     color:rgb(206, 206, 206);
+    color: rgb(237, 237, 237);
    }
 }
 
 
-
+.fa-plus:hover{
+  cursor: pointer;
+}
 
 /* carousel */
-* { box-sizing: border-box; }
-
-body {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-.scene {
-  position: relative;
-  width: 240px;
-  height: 65vh;
-  margin: 10px auto;
-  perspective: 1000px;
-}
 
 .carousel {
   width: 100%;
@@ -505,7 +580,7 @@ body {
 .carousel__cell {
   position: absolute;
   width: 230px;
-  height: 65vh;
+  height: 60vh;
   left: 10px;
   top: 10px;
   border: 2px solid black;
@@ -536,13 +611,3 @@ body {
 .carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
 .carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
 .carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
-
-
-
-.carousel-options {
-  margin-top: 20px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  background: hsla(0, 0%, 100%, 0.8);
-}

@@ -242,10 +242,6 @@ main {
   margin-top: -18px;
 }
 
-.temp-main { 
-  margin: 10vh 0 0 0;
-}
-
 .no-padding { 
   padding: 0 10vw !important;
 }
@@ -451,6 +447,10 @@ button {
   z-index: 2;
 }
 
+embed { 
+  max-height: 50vh;
+}
+
 
 .carousel-options p button { 
   margin:10px;
@@ -459,6 +459,10 @@ button {
 @media (max-width:767px)
 {
 
+
+  embed { 
+    max-height: 30vh;
+  }
 
   .domain-cont { 
     margin-top: 30px;

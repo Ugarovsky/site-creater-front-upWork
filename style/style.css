@@ -214,6 +214,10 @@ main {
   margin:0
 }
 
+.mycheck { 
+  margin-bottom: 0 !important;
+}
+
 
 .domain-example { 
   margin: 20px 16px;
@@ -238,7 +242,19 @@ main {
   margin-top: -18px;
 }
 
-.col-auto input{ 
+.temp-main { 
+  margin: 10vh 0 0 0;
+}
+
+.no-padding { 
+  padding: 0 10vw !important;
+}
+
+.col-auto { 
+  min-width: 200px;
+}
+
+.col-auto div{ 
    width: 400px;
 }
 
@@ -268,9 +284,6 @@ margin: 20px 0;
   .exp-cont { 
     padding-left: 0;
     padding-right: 0;
-  }
-  .main-nav { 
-    margin-top: 25px;
   }
   .asdd { 
     flex: 5;
@@ -487,7 +500,7 @@ button {
   h1 { 
     padding: 0 13px;
     font-size: 20px;
-    margin: 5px auto;
+    margin: 10px auto;
 }
    main {
  padding: 4px 28px 0px 28px;
@@ -525,7 +538,7 @@ button {
    }
 
    .sing-controls{
-     margin-top: 30px;
+     margin-top: 10px;
    }
 
    .no-mobile{
@@ -592,15 +605,24 @@ button {
   transition: transform 1s, opacity 1s;
 }
 
-.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+3) { background: hsla( 80, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+7) { background: hsla(240, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
-.carousel__cell:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
+
+.carousel-label span{ 
+  BACKGROUND: #272121;
+}
+
+.carousel-label { 
+  position: fixed;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+.carousel__cell:nth-child(9n+1) { background: url(../accets/1.JPG); background-size:100% 100%;}
+.carousel__cell:nth-child(9n+2) { background: url(../accets/2.JPG); background-size:100% 100%;}
+.carousel__cell:nth-child(9n+3) { background: url(../accets/3.JPG); background-size:100% 100%;}
+.carousel__cell:nth-child(9n+4) { background: url(../accets/4.JPG); background-size:100% 100%;}
+.carousel__cell:nth-child(9n+5) { background: url(../accets/5.JPG); background-size:100% 100%;}
+.carousel__cell:nth-child(9n+6) { background: url(../accets/6.JPG); background-size:100% 100%;}
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }

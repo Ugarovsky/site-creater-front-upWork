@@ -71,4 +71,3 @@ function onOrientationChange() {
 
 // set initials
 onOrientationChange();
-
